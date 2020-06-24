@@ -1,24 +1,23 @@
-# simpleCatchMe-Game
+# catch-Game
 
-# Game Presentation
+  Game Presentation
+    A simple mutliplayer offline game developped with C++ and SDL2.
 
-A simple mutliplayer offline game developped with C++ and SDL2.
+    Each player controls a square. The red one try to touch the blue one before time reaches two minutes. If the blue one could hold for 2 minutes without being touch he wins. 
 
-Each player controls a square. The red one try to touch the blue one before time reaches two minutes. If the blue one could hold for 2 minutes without being touch he wins. 
+      How the red square move ?
+        z: up.
+        d: right.
+        q: left.
 
-  How the red square move ?
-    z: up.
-    d: right.
-    q: left.
- 
- How the red square move ?
-    key_up: up.
-    key_right: right.
-    key_left: left.
-    
-Enjoy it.
+     How the red square move ?
+        key_up: up.
+        key_right: right.
+        key_left: left.
 
-#
+    Enjoy it.
+
+
 
 After cloning the project. you need to install SDL2 with SDL2_ttf and SDL2_image extension.
 
