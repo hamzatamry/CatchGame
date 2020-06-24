@@ -26,8 +26,12 @@ To compile it and generate the executable file, navigate firstly inside the proj
   
     g++ *.cpp -o game -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -mwindows
 
-To run it type this command or simply double click on the excecutable file: 
+To run it type this command 
+    
     linux: ./game
     windows: game
+    
+or simply double click on the excecutable file: 
 
+ENJOY IT
 
