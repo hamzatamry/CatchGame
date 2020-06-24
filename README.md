@@ -20,13 +20,14 @@
 
 
 
-After cloning the project. you need to install SDL2 with SDL2_ttf and SDL2_image extension.
+After cloning the project. you need to install SDL2 with SDL2_ttf and SDL2_image extensions.
 
 To compile it and generate the executable file, navigate firstly inside the project and type this command:
-  g++ *.cpp -o game -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -mwindows
+  
+    g++ *.cpp -o game -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image -mwindows
 
 To run it type this command or simply double click on the excecutable file: 
-  linux: ./game
-  windows: game
+    linux: ./game
+    windows: game
 
 
