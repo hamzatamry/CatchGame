@@ -29,5 +29,5 @@ To run it type this command
     
 or simply double click on the excecutable file.
 
-ENJOY IT
+ENJOY IT.
 
