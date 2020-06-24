@@ -11,12 +11,6 @@
 #include "map.h"
 
 
-void TTF_Initialisation(TTF_Font** font)
-{
-    TTF_Init();
-    *font = TTF_OpenFont("arial.ttf", 60);
-}
-
 
 void showTime(int time, SDL_Renderer* renderer, TTF_Font* font)
 {
@@ -26,7 +20,7 @@ void showTime(int time, SDL_Renderer* renderer, TTF_Font* font)
     SDL_Texture *timeTexture = NULL;
     char timeString[3];
     SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
-    sprintf(timeString, "%d", time / 1000);
+    sprintf(timeString, "%d", time);
     timeSurface = TTF_RenderText_Solid(font, timeString, red);
     timeTexture = SDL_CreateTextureFromSurface(renderer, timeSurface);
     SDL_RenderCopy(fenetre::renderer, timeTexture, NULL, &barreTime);
@@ -43,7 +37,14 @@ int main(int argc, char *argv[])
     player* p2 = new enemy();
 
     TTF_Font* font = NULL;
-    TTF_Initialisation(&font);
+
+    TTF_Init();
+    font = TTF_OpenFont("utilities/font/arial.ttf", 60);
+
+    if (font == NULL)
+    {
+         printf("font loaded incorrectly");
+    }
 
     timer chronoTimer;
     timer capTimer;
@@ -81,9 +82,11 @@ int main(int argc, char *argv[])
         p -> render();
         SDL_SetRenderDrawColor(fenetre::renderer, 255, 0, 0, 255);
         p2 -> render();
-        int time = chronoTimer.getTicks();
-
+        int time = chronoTimer.getTicks() / 1000;
         showTime(time, fenetre::renderer, font);
+        if (time  > 120)
+            break;
+
 
         SDL_RenderPresent(fenetre::renderer);
         int timeTicks = capTimer.getTicks();

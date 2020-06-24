@@ -65,7 +65,7 @@ void map::renderMap()
 {
     IMG_Init(IMG_INIT_JPG);
 
-    SDL_Surface* mapSurface = IMG_Load("map.jpg");
+    SDL_Surface* mapSurface = IMG_Load("utilities/img/map.jpg");
 
     if(mapSurface == NULL)
     {
