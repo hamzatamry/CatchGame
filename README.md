@@ -27,7 +27,7 @@ To run it type this command
     linux: ./game
     windows: game
     
-or simply double click on the excecutable file: 
+or simply double click on the excecutable file.
 
 ENJOY IT
 
