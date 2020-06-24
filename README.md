@@ -2,7 +2,7 @@
 
   Game Presentation:
   
-    A simple mutliplayer offline game developped with C++ and SDL2.
+    A simple multiplayer offline game developped with C++ and SDL2.
 
     Each player controls a square. The red one try to touch the blue one before time reaches two minutes. If the blue one could hold for 2 minutes without being touched he wins. 
 
