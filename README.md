@@ -1,6 +1,6 @@
 # catch-game
 
-  Game Presentation:
+  # Game Presentation:
   
     A simple multiplayer offline game developped with C++ and SDL2.
 
