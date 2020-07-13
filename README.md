@@ -29,7 +29,7 @@ To run it type this command
     
 or simply double click on the excecutable file.
 
-# Download link: [catchMe](http://www.mediafire.com/file/jixlpi3tgu8ek1e/CatchMe.rar/file).
+Download link: [catchMe](http://www.mediafire.com/file/jixlpi3tgu8ek1e/CatchMe.rar/file).
 
 ENJOY IT.
 
